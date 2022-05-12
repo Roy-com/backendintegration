@@ -20,6 +20,13 @@ import Certifications from './Components/Certifications';
 import Counts from './Components/Counts';
 import HowToCollaborate from './Components/HowToCollaborate';
 import Footer from './Components/Footer';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
+import Login from './Components/Login';
 const PureCounter = require('@srexi/purecounterjs');
 function App() {
   const scrollTracker = () => {
@@ -38,6 +45,7 @@ function App() {
     };
   }, [])
   return (
+    <>
     <div className="App">
       <Navbar />
       <Home />
@@ -58,6 +66,14 @@ function App() {
         <i className="bi bi-arrow-up-short"></i>
       </a>
     </div>
+    {/* <Router>
+      <Routes>
+        <Route  path="/login" element={<Login />}>
+          <Login/>
+        </Route>
+      </Routes>
+    </Router> */}
+    </>
   );
 }
 

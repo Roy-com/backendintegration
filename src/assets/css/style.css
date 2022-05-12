@@ -2391,3 +2391,73 @@ width: 100vw;
         background-color: none;
     }
 }
+
+
+
+.loginformofAdmin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* border: 1px dashed black; */
+  }
+  .adminform{
+    border: 1px solid rgb(156, 153, 153);
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px; */
+    padding: 100px;
+  }
+  .loginformofAdmin input{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    width: 230px;
+    border: 1px dashed rgb(24, 21, 21)!important;
+  }
+  .loginformofAdmin button{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed rgb(24, 21, 21);
+  }
+  .loginformofAdmin button:hover{
+   background-color: #90967a;
+   cursor: pointer;
+   border: 1px solid rgb(24, 21, 21);
+  }
+  @media screen and (max-width: 500px) {
+    .adminform{
+     
+      padding: 60px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .adminform{
+     
+      padding: 40px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .adminform{
+     
+      padding: 30px;
+    }
+    .loginformofAdmin input{
+    
+      width: 200px;
+    }
+  }
